@@ -4,13 +4,14 @@ $results = read-host -Prompt ('Select an Option:')
 $Computer = ("13.82.174.235", "13.82.174.235")
  
 $cred = Get-Credential -message "enter password" -UserName "SteamCMD\nick"
-$sitename = read-host -Prompt ('Enter Site Name:')
+
 # Using Scope Modifier
 # (1st Option -- works in PowerShell 3.0 and up)
 
 switch($results)
 {
     0{
+        $sitename = read-host -Prompt ('Enter Site Name:')
         foreach ($comp in $Computer)
         {
 
