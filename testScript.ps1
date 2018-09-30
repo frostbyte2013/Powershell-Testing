@@ -1,0 +1,4 @@
+gci
+cls
+$PSVersionTable
+
